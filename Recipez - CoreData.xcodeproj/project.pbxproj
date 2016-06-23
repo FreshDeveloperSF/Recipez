@@ -56,8 +56,10 @@
 		EC3900861D1A546600F8EEFE /* Recipez - CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				ECD57EF31D1B93BC00FD2370 /* Controller */,
+				ECD57EF21D1B93B300FD2370 /* View */,
+				ECD57EF11D1B93AA00FD2370 /* Model */,
 				EC3900871D1A546600F8EEFE /* AppDelegate.swift */,
-				EC3900891D1A546600F8EEFE /* ViewController.swift */,
 				EC39008B1D1A546600F8EEFE /* Main.storyboard */,
 				EC3900911D1A546600F8EEFE /* Assets.xcassets */,
 				EC3900931D1A546600F8EEFE /* LaunchScreen.storyboard */,
@@ -65,6 +67,28 @@
 				EC39008E1D1A546600F8EEFE /* Recipez___CoreData.xcdatamodeld */,
 			);
 			path = "Recipez - CoreData";
+			sourceTree = "<group>";
+		};
+		ECD57EF11D1B93AA00FD2370 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		ECD57EF21D1B93B300FD2370 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		ECD57EF31D1B93BC00FD2370 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EC3900891D1A546600F8EEFE /* ViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +316,7 @@
 				EC39009B1D1A546600F8EEFE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
