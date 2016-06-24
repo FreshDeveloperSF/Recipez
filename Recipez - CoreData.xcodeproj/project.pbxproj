@@ -13,6 +13,9 @@
 		EC3900901D1A546600F8EEFE /* Recipez___CoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EC39008E1D1A546600F8EEFE /* Recipez___CoreData.xcdatamodeld */; };
 		EC3900921D1A546600F8EEFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3900911D1A546600F8EEFE /* Assets.xcassets */; };
 		EC3900951D1A546600F8EEFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3900931D1A546600F8EEFE /* LaunchScreen.storyboard */; };
+		EC8A22CF1D1CB9EE003D63E2 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8A22CE1D1CB9EE003D63E2 /* RecipeCell.swift */; };
+		ECD57EF61D1B944100FD2370 /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD57EF41D1B944100FD2370 /* Recipe+CoreDataProperties.swift */; };
+		ECD57EF71D1B944100FD2370 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD57EF51D1B944100FD2370 /* Recipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		EC3900911D1A546600F8EEFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC3900941D1A546600F8EEFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC3900961D1A546600F8EEFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC8A22CE1D1CB9EE003D63E2 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		ECD57EF41D1B944100FD2370 /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Recipe+CoreDataProperties.swift"; path = "../Recipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		ECD57EF51D1B944100FD2370 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = ../Recipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,8 @@
 		ECD57EF11D1B93AA00FD2370 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ECD57EF41D1B944100FD2370 /* Recipe+CoreDataProperties.swift */,
+				ECD57EF51D1B944100FD2370 /* Recipe.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -79,6 +87,7 @@
 		ECD57EF21D1B93B300FD2370 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EC8A22CE1D1CB9EE003D63E2 /* RecipeCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -163,8 +172,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC3900901D1A546600F8EEFE /* Recipez___CoreData.xcdatamodeld in Sources */,
+				ECD57EF61D1B944100FD2370 /* Recipe+CoreDataProperties.swift in Sources */,
 				EC39008A1D1A546600F8EEFE /* ViewController.swift in Sources */,
+				EC8A22CF1D1CB9EE003D63E2 /* RecipeCell.swift in Sources */,
 				EC3900881D1A546600F8EEFE /* AppDelegate.swift in Sources */,
+				ECD57EF71D1B944100FD2370 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
