@@ -41,7 +41,7 @@
                                                     <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="21"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
-                                                    <color key="shadowColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                     <size key="shadowOffset" width="1" height="1"/>
                                                     <variation key="default">
                                                         <mask key="constraints">
@@ -85,15 +85,18 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="VvS-i9-amx" id="Jgx-EL-Xja"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-82" y="982"/>
+            <point key="canvasLocation" x="58" y="953"/>
         </scene>
-        <!--View Controller-->
+        <!--Create RecipeVC-->
         <scene sceneID="6Yo-89-Rlz">
             <objects>
-                <viewController id="HHp-jT-bis" sceneMemberID="viewController">
+                <viewController id="HHp-jT-bis" customClass="CreateRecipeVC" customModule="Recipez___CoreData" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yGe-BP-dz9"/>
                         <viewControllerLayoutGuide type="bottom" id="END-me-f57"/>
@@ -124,12 +127,6 @@
                                     <constraint firstAttribute="width" constant="175" id="aiy-5b-UZp"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0IV-hL-cQG">
-                                <rect key="frame" x="213" y="278" width="175" height="175"/>
-                                <state key="normal" title="ADD IMAGE">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o2T-L5-ZSb">
                                 <rect key="frame" x="252" y="489" width="97" height="30"/>
                                 <constraints>
@@ -137,6 +134,18 @@
                                     <constraint firstAttribute="height" constant="30" id="L6n-Bf-FHm"/>
                                 </constraints>
                                 <state key="normal" title="Create Recipe"/>
+                                <connections>
+                                    <action selector="createRecipe:" destination="HHp-jT-bis" eventType="touchUpInside" id="0Rt-sm-Kfl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0IV-hL-cQG">
+                                <rect key="frame" x="-381" y="-5" width="1362" height="742"/>
+                                <state key="normal" title="ADD IMAGE" image="RecipeCarousel-Coconut-Curry-Soup">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="addImage:" destination="HHp-jT-bis" eventType="touchUpInside" id="ZGo-bs-iLV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -160,6 +169,12 @@
                             <constraint firstItem="chr-wF-77F" firstAttribute="trailing" secondItem="5ub-Wh-iwx" secondAttribute="trailingMargin" id="x8Y-7f-aHK"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="recipeImg" destination="2MR-LF-Lvo" id="B56-cQ-ZvA"/>
+                        <outlet property="recipeIngredients" destination="chr-wF-77F" id="ua4-Gq-lBL"/>
+                        <outlet property="recipeSteps" destination="apa-iI-AVY" id="kuH-C4-d1T"/>
+                        <outlet property="recipeTitle" destination="3ua-dW-peU" id="ydD-TY-JDA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zDP-Fu-ATR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -182,7 +197,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6XY-yd-Ttu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-280" y="1358"/>
+            <point key="canvasLocation" x="-171" y="1345"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="RecipeCarousel-Coconut-Curry-Soup" width="1266" height="742"/>
+    </resources>
 </document>

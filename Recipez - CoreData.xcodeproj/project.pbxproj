@@ -14,6 +14,7 @@
 		EC3900921D1A546600F8EEFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC3900911D1A546600F8EEFE /* Assets.xcassets */; };
 		EC3900951D1A546600F8EEFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC3900931D1A546600F8EEFE /* LaunchScreen.storyboard */; };
 		EC8A22CF1D1CB9EE003D63E2 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8A22CE1D1CB9EE003D63E2 /* RecipeCell.swift */; };
+		ECA505541D20AAB50036FB83 /* CreateRecipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECA505531D20AAB50036FB83 /* CreateRecipeVC.swift */; };
 		ECD57EF61D1B944100FD2370 /* Recipe+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD57EF41D1B944100FD2370 /* Recipe+CoreDataProperties.swift */; };
 		ECD57EF71D1B944100FD2370 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD57EF51D1B944100FD2370 /* Recipe.swift */; };
 /* End PBXBuildFile section */
@@ -28,6 +29,7 @@
 		EC3900941D1A546600F8EEFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC3900961D1A546600F8EEFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC8A22CE1D1CB9EE003D63E2 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		ECA505531D20AAB50036FB83 /* CreateRecipeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateRecipeVC.swift; sourceTree = "<group>"; };
 		ECD57EF41D1B944100FD2370 /* Recipe+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Recipe+CoreDataProperties.swift"; path = "../Recipe+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		ECD57EF51D1B944100FD2370 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Recipe.swift; path = ../Recipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				EC3900891D1A546600F8EEFE /* ViewController.swift */,
+				ECA505531D20AAB50036FB83 /* CreateRecipeVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				ECD57EF61D1B944100FD2370 /* Recipe+CoreDataProperties.swift in Sources */,
 				EC39008A1D1A546600F8EEFE /* ViewController.swift in Sources */,
 				EC8A22CF1D1CB9EE003D63E2 /* RecipeCell.swift in Sources */,
+				ECA505541D20AAB50036FB83 /* CreateRecipeVC.swift in Sources */,
 				EC3900881D1A546600F8EEFE /* AppDelegate.swift in Sources */,
 				ECD57EF71D1B944100FD2370 /* Recipe.swift in Sources */,
 			);
